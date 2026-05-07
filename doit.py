@@ -25,4 +25,4 @@ def main(words):
         if words[4] != 'off':
             command += f' --gitignore {words[4]}'
 
-    os.system(command)
+    os.system(command) 
