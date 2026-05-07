@@ -16,10 +16,10 @@ def main(words):
         except Exception:
             raise ValueError(f"Something went wrong...")
     elif lword > 2 and words[1] == "from":
-        try :
+        try:
             project_name = words[0]
             autor_name = words[2]
-            os.system(f"gh search repos{project_name} --limit 5 && xdg-open https://github.com/{autor_name}/{project_name}")
+            os.system(f"gh search repos {project_name} --limit 5 && xdg-open https://github.com/{autor_name}/{project_name}")
         except Exception:
             raise ValueError(f"Something went wrong...")
     else:
